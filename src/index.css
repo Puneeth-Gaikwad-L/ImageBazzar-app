@@ -62,7 +62,11 @@ body{
   box-shadow: 0.5px 0.5px 15px 0.5px #64E9FF;
 }
 
-@media only screen and (min-width : 300px){
+@media only screen and (min-width : 300px) and (max-width : 650px){
+
+  body{
+    overflow-x: hidden;
+  }
 
   .search-section{
     height: 20vh;
