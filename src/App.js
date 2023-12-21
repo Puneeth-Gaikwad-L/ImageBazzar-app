@@ -7,7 +7,7 @@ const App = () => {
   
   return (
     <div>
-      <ImageSearch setImages={setImages} />
+      <ImageSearch setImages={setImages} Images={Images} />
       <ImageList Images={ Images} />
     </div>
   );
