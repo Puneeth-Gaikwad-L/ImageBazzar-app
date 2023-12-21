@@ -17,7 +17,7 @@ const ImageSearch = ({setImages}) => {
             const response = await axios.get("https://api.unsplash.com/search/photos", {
             headers: {
                 "Accept-Version": "v1",
-                "Authorization":"Client-ID rzk95xpG7pGsmj5xIH6IL4WCWspxCmq2pSYL3Te_jkw"
+                "Authorization":`Client-ID ${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}`
             },
             params: {
                 query: searchTerm || initialSearch
